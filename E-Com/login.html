@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>User Login</title>
+        <!--css--------------------------------------------------------------------->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+
+<!--Javascript--------------------------------------------------------------------->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+    </head>
+    <body>
+       <nav class="navbar navbar-expand-lg navbar-dark custom-bg">
+    <div class="container">
+        <a class="navbar-brand" href="index.jsp"><img class="mr-2 mb-1" style="hight:30px; width: 30px;" src="img/logo.png"/>Furniture.com</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.jsp">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      
+    </ul>
+      <ul class="navbar-nav ml-auto">
+          
+           <li class="nav-item active">
+               <a class="nav-link" style="font-size: 18px;" href="#!" data-toggle="modal" data-target="#cart"><i class="fa fa-shopping-cart"></i><span class="cart-item"> ( 0 )</span> </a>
+           </li>
+          
+          
+                    
+          
+               <li class="nav-item active">
+              <a class="nav-link" href="login.html">Login</a>
+           </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="register.html">Register</a>
+           </li>
+        
+         
+           
+         
+          
+          
+          
+      </ul>
+  </div>
+    </div>
+</nav>
+         <div class="container ">
+             <div class="row mt-5">
+                 <div class="col-md-6 offset-md-3">
+                     <div class="card-header custom-bg text-white font-weight-bold" style="font-size:25px;border-radius: 20px 20px 0px 0px; ">
+                         Login Here
+                     </div>
+                     <div class="card-body bg-light shadow-lg p-3">
+                        
+                         <div class="container">
+                         
+                             <div class="container text-center">
+                                 <img style="height: 150px;" class="img-fluid" src="img/login.png"/>
+                                 <h1>Welcome Back</h1>
+                                 <h6>Log in with your existing Account</h6>
+                             </div>
+                             
+                             
+                             
+                             <form action="LoginServlet" method="post">
+                     <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input name="email"  style="border-radius: 50px;" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required" />
+                   <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                                     <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input name="password" style="border-radius: 50px;" type="password" class="form-control" id="exampleInputPassword1" required="required"/>
+                                      </div>
+                             <a href="ragister.jsp" class="d-block mb-3 text-center"> If not registered click here.</a>
+                                 
+                             
+                             <div class="container text-center ">
+                              <button type="submit" class="btn btn-primary text-white custom-bg border-0">Submit</button>
+                              <button type="reset" class="btn btn-primary text-white custom-bg border-0">Reset</button>
+                             </div>
+                        </form>
+                     </div>
+                     </div>
+                    
+                     
+                     
+                 </div>
+             </div>
+         </div>           
+    </body>
+</html>
