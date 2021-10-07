@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @pratikmhabadi
-- 👀 I’m interested in web development
+- 👀 I’m interested in java development
 - 🌱 I’m currently learning as student 
 - 💞️ I’m looking to collaborate on new projects which helps me to improve my skills.
 - 📫 How to reach me ...
